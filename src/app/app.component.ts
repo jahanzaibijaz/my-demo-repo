@@ -11,7 +11,9 @@ import { MapsAPILoader} from '@agm/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  items:any[] = new Array()  
+  items:any[] = new Array() 
+  
+  newItem: any[] = new Array();
 
   addItem(newItem: any) {
     this.items.push(newItem);
