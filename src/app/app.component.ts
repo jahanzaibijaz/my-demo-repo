@@ -13,7 +13,7 @@ import { MapsAPILoader} from '@agm/core';
 export class AppComponent implements OnInit {
   items:any[] = new Array() 
   
-  newItem: any[] = new Array();
+  newItemsInDom: any[] = new Array();
 
   addItem(newItem: any) {
     this.items.push(newItem);
