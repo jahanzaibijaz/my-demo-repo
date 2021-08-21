@@ -1,0 +1,26 @@
+
+<div>
+    <h3>Hello,World</h3> 
+    <input [(ngModel)]="name" #ctrl="ngModel"  required>
+    Value:
+    <h2> {{ name }} </h2>
+    
+    
+</div>
+Valid: {{ ctrl.valid }}
+<button (click)="setValue()">Set value</button>
+
+{{ 5*10 }}
+
+<p *ngIf="users[0]=='jahanzaib'">
+<li *ngFor="let user of users">
+    {{ user }}
+  </li>
+</p>
+
+<app-test-demo [item]="currentItem" (outPutItem)="addItem($event)"></app-test-demo>
+
+<ul>
+  <li *ngFor="let item of items">{{item}}</li>
+</ul>
+<router-outlet></router-outlet>
